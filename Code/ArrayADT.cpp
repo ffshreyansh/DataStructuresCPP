@@ -146,20 +146,20 @@ Array::Array(int a){
 
 }
 
-int main(){
+// int main(){
     
-    Array obj(5);
+//     Array obj(5);
 
-    if(obj.isEmpty())
-    cout<<"is Empty ";
+//     if(obj.isEmpty())
+//     cout<<"is Empty ";
 
-    obj.append(20);
-    obj.append(30);
-    obj.append(50);
-    obj.insert(1,10);
+//     obj.append(20);
+//     obj.append(30);
+//     obj.append(50);
+//     obj.insert(1,10);
     
     
 
-    cout<<endl;
-    return 0;
-}
+//     cout<<endl;
+//     return 0;
+// }

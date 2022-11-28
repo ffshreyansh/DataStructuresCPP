@@ -1,17 +1,24 @@
 #include "ArrayADT.cpp"
-int greatest(Array obj)
+class ExtendedArray:public Array
+{
+    public:
+        ExtendedArray(int);
+        int greatest();
+};
+ExtendedArray::ExtendedArray(int a):Array(a){}
+int ExtendedArray::greatest()
 {
     int max;
-    if(obj.isEmpty())
+    if(isEmpty())
     {
         cout<<"Array is Empty";
         return -1;
     }
 
-    max = obj.get(0);
-    for(int i=1; i<obj.count(); i++)
-        if(max<obj.get(i)){
-            max = obj.get(i);
-        }
-    return max;
+    max = get(0);
+    for(int i=1; i<count(); i++)
+        if(max<get(i)){
+            max = get(i);
+        } 
+    return max; 
 }

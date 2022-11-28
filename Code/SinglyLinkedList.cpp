@@ -1,14 +1,29 @@
 #include <iostream>
 using namespace std;
 
-class SLL{
+struct node
+{
+    int item;
+    node *next;
+};
+class SLL
+{
 private:
-    struct node *start;
+    node *start;
+
 public:
     SLL();
-
+    void insertAtStart(int);
 };
 
-SLL::SLL(){
+void SLL::insertAtStart(int data)
+{
+    node *n = new node;
+    n->item = data;
+    n->next = start;
+}
+
+SLL::SLL()
+{
     start = nullptr;
 }
